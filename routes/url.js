@@ -25,7 +25,7 @@ router.post('/shorten', async (req, res) => {
     res.setHeader('Access-Control-Allow-Credentials', true);  
 
   const longUrl  = req.body.longUrl;
-  const baseUrl = process.env.url;
+  const baseUrl = "linkmini.me";
   console.log(longUrl);
   console.log(req.body.longUrl);
   console.log(req.param.body);
