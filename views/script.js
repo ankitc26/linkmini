@@ -191,7 +191,7 @@ function ShortURL()
     
     var longurlvalue=document.getElementById("longURL").value;
    
-    $.post("http://linkmini.herokuapp.com/api/url/shorten",{longUrl: longurlvalue}, function (data, status) {
+    $.post("http://linkmini.me/api/url/shorten",{longUrl: longurlvalue}, function (data, status) {
         document.getElementById("shorturl").value=data.shortUrl;
        
         //datafinal=data;    
