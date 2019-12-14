@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154414848-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154414848-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-T3WDXCV');</script>
+        <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A link shortening tool, Convert large links to small links.">
+    <meta name="keywords" content="shorten link, tiny, tiny link, short url, shorten url, small url, short link, mini link, url shortner, url shorten, small link, tinyfor">
+    <link rel="canonical" href="http://www.minilink.me/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>LinkMini | A URL Shortner</title>
+    <link rel="icon" type="image/png" href="./assets/linkmini_logo_small.png">
+    <link rel="apple-touch-icon" type="image/png" href="./assets/linkmini_logo_small.png"/>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3WDXCV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- partial:index.partial.html -->
+    <div id="large-header" class="large-header" style="height: 340px;">
+        <canvas id="demo-canvas" width="1366" height="340"></canvas>
+        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
+    </div>
+
+    <!-- partial -->
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js'></script>
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js'></script>
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js'>
+    </script><script  src="./script.js"></script>
+
+    <!-- Logo -->
+    <div class="logo">
+        <a href="#"><img class="image" src="./assets/linkmini_logo.png" alt="Logo"></a>
+    </div>
+
+    <!-- Work Area -->
+    <div class="enterurl">
+        <input type="url" class="url" id="longURL" placeholder="Enter your url..." pattern="https?://.+" title="Please enter valid URL.(i.e. http://)" required/>
+        <input type="submit" class="btn btn-info btn-1" onclick="ShortURL()" value="Mini Me!" />
+        <input type="submit" class="btn btn-info btn-2 fa fa-input" value="&#xf0ea" title="Copy Link" onclick="funcopy()"/>
+        <input type="text" class="link" id="shorturl" readonly />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/ankitc26/"><i class="fa fa-linkedin icon"></i></a>
+            <a href="mailto:ankitc26@gmail.com?Subject=From%20Linkmini"><i class="fa fa-envelope icon"></i></a>
+            <a href="https://www.github.com/ankitc26/"><i class="fa fa-github icon"></i></a>
+        </div>
+        &copy; Ankit Chawla | 2020
+    </div>
+</body>
+</html>

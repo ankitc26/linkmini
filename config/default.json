@@ -1,0 +1,4 @@
+{
+  "mongoURI": process.env.mongoconfig,
+  "baseUrl": process.env.url
+}
