@@ -33,7 +33,7 @@ router.post('/shorten', async (req, res) => {
     // to the API (e.g. in case you use sessions)
     res.setHeader('Access-Control-Allow-Credentials', true);  
 
-  const longUrl  = req.body.longUrl;
+  let longUrl  = req.body.longUrl;
   const baseUrl = config.get('baseUrl');
   console.log(longUrl);
   console.log(req.body.longUrl);
@@ -47,7 +47,7 @@ router.post('/shorten', async (req, res) => {
   const urlCode = shortid.generate();
   
   longUrl = schemeAddapt(longUrl);
-
+  console.log(`With scheme appended ${longUrl}`)
   // Check long url
   if (validUrl.isUri(longUrl) ) {
     try {
