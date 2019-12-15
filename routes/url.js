@@ -6,15 +6,6 @@ const config = require('config');
 
 const Url = require('../models/Url');
 
-function schemeAddapt(link) {
-  // Add an http scheme if none exists
-  // Using regex
-  if(/^(?:f|ht)tps?\:\/\//.test(link) == false) {
-    link = 'http' + link;
-  }
-  return link;
-}
-
 // @route     POST /api/url/shorten
 // @desc      Create short URL
 router.post('/shorten', async (req, res) => {
@@ -45,8 +36,6 @@ router.post('/shorten', async (req, res) => {
 
   // Create url code
   const urlCode = shortid.generate();
-  
-  longUrl = schemeAddapt(longUrl);
 
   // Check long url
   if (validUrl.isUri(longUrl) ) {
