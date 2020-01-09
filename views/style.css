@@ -1,24 +1,18 @@
 body {
-    background-image: url("./assets/landscape-photo-of-mountain-with-polar-lights-1434608.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    overflow: hidden;
-}
-
-.large-header {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    background: url("./assets/landscape-photo-of-mountain-with-polar-lights-1434608.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
     position: absolute;
-    top: 5%;
-    left: 45%;
-    right: 50%;
-    width: auto;
+    width: 100%;
+    margin-top: 50px !important;
 }
 
 .image {
@@ -28,9 +22,9 @@ body {
 
 .enterurl {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    width: 100%;
+    height: auto;
 }
 
 .url {
@@ -39,65 +33,84 @@ body {
     position: relative;
     display: block;
     outline: none;
-    width: 500px;
+    width: 35% !important;
     margin: 0 auto;
     padding: 10px;
     color: #333;
     -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     font-size: large;
+    border-radius: 15px;
+    left:0;
+    right:0;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 1%;
 }
 
 .btn-1 {
-    width: 30%;
-    margin: 5px 0px;
+    position: relative;
+    width: 20%;
+}
+
+.btn-2 {
+    position: relative;
+    width: 8%;
+    text-align: center;
+    margin-left: .4%;
 }
 
 .link {
     background: rgba(255,255,255,0.6);
     border: none;
     position: relative;
-    /* display: inline; */
     outline: none;
-    width: 270px;
-    margin: 5px 0px 0px 12px;
+    width: 46%;
     padding: 10px;
     color: #333;
     -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     font-size: medium;
-}
-
-.btn-2 {
-    width: 55px;
-    margin: 5px 0px 5px 5px;
-    text-align: center;
+    border-radius: 15px;
+    margin-left: .4%;
 }
 
 .icons {
     position: relative;
     top: -20px;
     width: 100%;
-    text-align: center;
+    display: block;
 }
 
 .icon {
     position: relative;
     padding: 0 30px;
     font-size: 30px;
-    text-align: center;
     color: #fff;
 }
 
 .footer {
-    top: -70px;
-    position: relative;
+    top: 90%;
+    position: absolute;
     text-align: center;
     color: #fff;
     margin: 0 auto;
     padding: 0 auto;
-    width: auto;
+    width: 100%;
     height: auto;
+    z-index: 1;
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
     z-index: 1;
 }
 
@@ -110,58 +123,61 @@ body {
 1800px + :      Big desktop */
 
 @media only screen and (min-width: 0px) and (max-width: 600px){
-
     body {
-        background-size: cover;
+        overflow: hidden  !important;
     }
-
-    .logo {
-        width: 100%;
-        left: 35%;
-        right: 40%;
-    }
-
-    .enterurl {
-        width: 100%;
-    }
-
     .url {
-        width: 80%;
+        width: 80% !important;
     }
-
+    .container {
+        width: 80% !important;
+    }
     .btn-1 {
-        position: relative;
-        width: 50%;
-        margin: 10px 0px;
-        padding: 1% 20% 1% 20%;
-        top: 5px;
-        left: 25%;
-    }
-
-    .link {
         width: 80%;
-        display: block;
-        left: 8%;
-        right: 12%;
+        margin-top: 2%;
     }
-
     .btn-2 {
-        position: relative;
-        width: 50%;
-        margin: 10px 0px;
-        padding: 1% 20% 1% 20%;
-        left: 25%;
+        width: 80%;
+        margin-top: 2%;
+    }
+    .link {
+        width: 85%;
+        margin-top: 2%;
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     body {
-        background-size: cover;
+        overflow: hidden  !important;
+    }
+    .url {
+        width: 70% !important;
+    }
+    .container {
+        width: 70% !important;
+    }
+    .btn-1 {
+        width: 80%;
+        margin-top: 2%;
+    }
+    .btn-2 {
+        width: 80%;
+        margin-top: 2%;
+    }
+    .link {
+        width: 85%;
+        margin-top: 2%;
     }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     body {
-        background-size: cover;
+        overflow: hidden  !important;
+    }
+    .url {
+        width: 72%  !important;
+    }
+    .container {
+        width: 80%  !important
     }
 }
