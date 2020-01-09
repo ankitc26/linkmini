@@ -37,10 +37,10 @@
 
     <!-- Work Area -->
     <div class="enterurl text-center">
-        <input type="url" class="url" id="longURL" name="someUrl" onchange="checkURL(this)" placeholder="Enter your url..."  required />
+        <input type="url" class="url" id="longURL" name="someUrl" onchange="checkURL(this)" placeholder="Enter your url..." pattern="https?://.+" onkeyup="checkForEnterKey(this.value)" required />
         <div class="container text-center">
             <div class="row">        
-                <input type="submit" class="btn btn-info btn-1 col-lg" onclick="ShortURL()" value="Mini Me!" />
+                <input type="submit" class="btn btn-info btn-1 col-lg" onclick="ShortURL()" value="Mini Me!" id="mini" />
                 <input class="btn btn-info btn-2 fa fa-input col-lg" value="&#xf0ea" title="Copy Link" onclick="funcopy()" />
                 <input type="text" class="link col-lg" id="shorturl" readonly />
             </div>
@@ -50,9 +50,9 @@
     <!-- Footer -->
     <footer class="footer pull-right">
         <div class="icons">
-            <a href="https://www.linkedin.com/in/ankitc26/"><i class="fa fa-linkedin icon"></i></a>
+            <a href="http://linkmini.me/ankitli/"><i class="fa fa-linkedin icon"></i></a>
             <a href="mailto:ankitc26@gmail.com?Subject=From%20Linkmini"><i class="fa fa-envelope icon"></i></a>
-            <a href="https://www.github.com/ankitc26/"><i class="fa fa-github icon"></i></a>
+            <a href="http://linkmini.me/ankitgit/"><i class="fa fa-github icon"></i></a>
         </div>
         &copy; Ankit Chawla | 2020
     </footer>

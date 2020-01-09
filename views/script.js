@@ -214,7 +214,14 @@ function funcopy() {
 }
 
 function checkURL(o) {
-    if (!/^https?:\/\//i.test(o.value)) {
+    if (/^(http:\/\/www\.|https:\/\/www\.|www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/.test(o.value)) {
         o.value = "http://" + o.value;
+    }
+}
+
+function checkForEnterKey(){
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("mini").click();
     }
 }
