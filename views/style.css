@@ -18,6 +18,7 @@ body {
 .image {
     width: 150px;
     height: 150px;
+    z-index: 99;
 }
 
 .enterurl {
@@ -43,7 +44,7 @@ body {
     border-radius: 15px;
     left:0;
     right:0;
-    z-index: 1;
+    z-index: 99;
 }
 
 .container {
@@ -51,12 +52,13 @@ body {
     margin: 0 auto;
     padding: 0;
     margin-top: 1%;
+    z-index: 99;
 }
 
 .btn-1 {
     position: relative;
     width: 20%;
-    z-index: 1;
+    z-index: 99;
 }
 
 .btn-2 {
@@ -64,7 +66,7 @@ body {
     width: 8%;
     text-align: center;
     margin-left: .4%;
-    z-index: 1;
+    z-index: 99;
 }
 
 .link {
@@ -80,7 +82,7 @@ body {
     font-size: medium;
     border-radius: 15px;
     margin-left: .4%;
-    z-index: 1;
+    z-index: 99;
 }
 
 .icons {
@@ -88,6 +90,7 @@ body {
     top: -20px;
     width: 100%;
     display: block;
+    z-index: 99;
 }
 
 .icon {
@@ -95,6 +98,7 @@ body {
     padding: 0 30px;
     font-size: 30px;
     color: #fff;
+    z-index: 99;
 }
 
 .footer {
@@ -106,7 +110,7 @@ body {
     padding: 0 auto;
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 99;
 }
 
 .large-header {
@@ -115,7 +119,7 @@ body {
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 /* MEDIA QUERY MANAGER
