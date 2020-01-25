@@ -27,7 +27,19 @@
     <link rel="apple-touch-icon" type="image/png" href="./assets/linkmini_logo_small.png"/>
     <script  src="./script.js"></script>
 </head>
-<body>   
+<body>
+    <!-- Animation -->
+    <!-- partial:index.partial.html -->
+    <div id="large-header" class="large-header" style="height: 340px;">
+        <canvas id="demo-canvas" width="1366" height="340"></canvas>
+        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
+    </div>
+    <!-- partial -->
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js'></script>
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js'></script>
+    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js'></script>
+    <script src="./script.js"></script>
+    
     <!-- Logo -->
     <div class="logo">
         <div class="text-center">
@@ -56,18 +68,5 @@
         </div>
         &copy; Ankit Chawla | 2020
     </footer>
-
-    <!-- Animation -->
-    <!-- partial:index.partial.html -->
-    <div id="large-header" class="large-header" style="height: 340px;">
-        <canvas id="demo-canvas" width="1366" height="340"></canvas>
-        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
-    </div>
-    <!-- partial -->
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js'></script>
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js'></script>
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js'></script>
-    <script src="./script.js"></script>
-  
 </body>
 </html>
