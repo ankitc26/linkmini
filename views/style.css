@@ -102,6 +102,17 @@ body {
     z-index: 99;
 }
 
+.linkroute {
+    color: #fff;
+}
+
+.linkroute:hover {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: solid;
+    transition: .1s ease-in-out;
+}
+
 .footer {
     top: 90%;
     position: absolute;
