@@ -28,19 +28,7 @@
     <script  src="./script.js"></script>
 </head>
 <body>
-    <!-- Animation -->
-    <!-- partial:index.partial.html -->
-    <div id="large-header" class="large-header" style="height: 340px;">
-        <canvas id="demo-canvas" width="1366" height="340"></canvas>
-        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
-    </div>
-    <!-- partial -->
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js'></script>
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js'></script>
-    <script src='https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js'></script>
-    <script src="./animation.js"></script>
-
-    <!-- Logo -->
+     <!-- Logo -->
     <div class="logo">
         <div class="text-center">
             <a href="#"><img class="image" src="./assets/linkmini_logo.png" alt="Logo"></a>
@@ -68,5 +56,17 @@
         </div>
         &copy; Ankit Chawla | 2020
     </footer>
+
+    <!-- Animation -->
+    <!-- partial:index.partial.html -->
+    <div id="large-header" class="large-header" style="height: 340px;">
+        <canvas id="demo-canvas" width="1366" height="340"></canvas>
+        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-requestAnimationFrame/0.2.1/jquery.requestanimationframe.min.js'></script>
+    <script src="./animation.js"></script>
+
 </body>
 </html>
